@@ -1,5 +1,6 @@
 (() => {
     'use strict';
+    record['lastname'].value = 'こんにちは、kintone!';
     kintone.events.on('app.record.create.show', (event) => {
       const record = event.record;
       record['lastname'].value = 'こんにちは、kintone!';
@@ -11,7 +12,7 @@
 
   (function() {
     'use strict';
-  
+    record['lastname'].value = 'こんにちは、kintone!';
     // 編集画面を開いたときのイベント
     kintone.events.on('app.record.index.edit.show', function(event) {
         console.log('編集画面に入りましたよ');
